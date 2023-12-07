@@ -155,7 +155,7 @@
 <!--              </span>-->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/wutong16/GPT43D"
+                <a href="https://github.com/wutong16/GPTEval3D"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -185,9 +185,9 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
         <img src="./static/images/teaser.jpeg" >
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf"> [TODO]
-      </h2>
+<!--      <h2 class="subtitle has-text-centered">-->
+<!--        <span class="dnerf"> [TODO]-->
+<!--      </h2>-->
     </div>
   </div>
 </section>
@@ -230,10 +230,14 @@
 
 <section class="section">
   <div class="container is-max-desktop content">
-    <h2 class="title">Prompts</h2>
+    <h2 class="title">Prompt Distribution</h2>
+      <p>
+        Controllable prompt generator. More complexity or more creative prompts often lead to a more challenging evaluation setting.
+        Our prompt generator can produce prompts with various levels of creativity and complexity.
+        This allows us to examine textto-3D models’ performance in different cases more efficiently.
+      </p>
 
-
-    <h2 class="title is-5">Different Complexity Levels</h2>
+    <h2 class="title is-6">Different Complexity Levels</h2>
     <div class="columns is-centered">
       <div class="column">
         <div class="content">
@@ -273,7 +277,7 @@
       </div>
   </div>
 
-  <h2 class="title is-5">Different Creativity Levels</h2>
+  <h2 class="title is-6">Different Creativity Levels</h2>
     <div class="columns is-centered">
       <div class="column">
         <div class="content">
@@ -320,23 +324,21 @@
 
 <section class="section">
   <div class="container is-max-desktop content">
-    <h2 class="title">Method</h2>
+    <h2 class="title">Method Overview</h2>
     <img src="./static/images/method.jpeg" >
     <p>
-      How we use GPT4-V?
+      We create a customizable instruction template that contains necessary information for GPT-4V to conduct comparison tasks for two 3D assets.
+      We complete this template with different evaluation criteria, input 3D images, and random seeds to create the final 3D-aware prompts for GPT-4V.
+      GPT-4V will then consume these inputs to output its assessments.
+      Finally, we assemble GPT-4V’s answers to create a robust final estimate of the task.
     </p>
-
-    <p>
-      How we rank different methods?
-    </p>
-
   </div>
 </section>
 
 
 <section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title">Examples (will change up-down to left-right)</h2>
+    <h2 class="title">Examples</h2>
 
     <div class="columns is-centered">
 
@@ -386,7 +388,7 @@
 
         </div>
       </div>
-    
+
 
 
   </div>
@@ -395,9 +397,9 @@
 
 <section class="section">
   <div class="container is-max-desktop content">
-    <h2 class="title">Results</h2>
+    <h2 class="title">LeaderBoard</h2>
     <p>
-      Do not want to talk too much about ranking at this state...
+      Will be online soon!
     </p>
 
 
@@ -407,7 +409,7 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{wu2023gpt4eval3d,
+    <pre><code>@article{wu2023gpteval3d,
   author    = {Tong Wu, Guandao Yang, Zhibing Li, Kai Zhang, Ziwei Liu, Leonidas Guibas, Dahua Lin, Gordon Wetzstein},
   title     = {GPT-4V(ision) is a Human-Aligned Evaluator for Text-to-3D Generation},
   journal={arXiv preprint arXiv:xxxxxx},
@@ -422,7 +424,7 @@
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
-            This page was adopted from the amazing <a href="https://nerfies.github.io/">Nerfies</a> project page.
+            We thank <a href="https://nerfies.github.io/">Nerfies</a> for providing this amazing project template.
           </p>
         </div>
       </div>
